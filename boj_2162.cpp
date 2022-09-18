@@ -6,6 +6,11 @@ struct vec2
 {
     int x;
     int y;
+    vec2()
+    {
+        x = 0;
+        y = 0;
+    };
     vec2(int ix, int iy)
     {
         x = ix;
@@ -20,6 +25,7 @@ struct line
 {
     vec2 sta;
     vec2 end;
+    line() {};
     line(vec2 ista, vec2 iend)
     {
         sta = ista;
@@ -29,7 +35,7 @@ struct line
 
 inline bool crossTest(line &l1, line &l2)
 {
-    // l1.sta.x - l1.end.x
+    vec2 l1.sta - l1.end
     return true;
 }
 
@@ -43,16 +49,16 @@ int main()
     vector<int> lineGroup;
     arrLine.resize(N);
     vector<line>::iterator ptrLine;
-    // for (ptrLine = arrLine.begin(); ptrLine != arrLine.end(); ++ptrLine)
-    // {
-    //     scanf("%d %d %d %d", &ptrLine->sta.x,&ptrLine->sta.y,&ptrLine->end.x, &ptrLine->end.y);
+    for (ptrLine = arrLine.begin(); ptrLine != arrLine.end(); ++ptrLine)
+    {
+        scanf("%d %d %d %d", &ptrLine->sta.x,&ptrLine->sta.y,&ptrLine->end.x, &ptrLine->end.y);
         
-    //     // bool 
-    //     // for (int ii = 0; ii < group.size(); ++ii)
-    //     // {
+        // bool 
+        // for (int ii = 0; ii < group.size(); ++ii)
+        // {
             
-    //     // }
-    // }
+        // }
+    }
 
 
 }
